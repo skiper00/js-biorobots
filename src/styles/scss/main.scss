@@ -1,0 +1,12 @@
+@use '@templates/header/header.scss';
+@use '@templates/heroSection/HeroSection.scss';
+@use '@templates/market/marketSection.scss';
+@use '@templates/production/production.scss';
+@use '@templates/wallet/wallet.scss';
+@use '@templates/warehouse/warehouse.scss';
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

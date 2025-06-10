@@ -1,0 +1,30 @@
+{
+  "name": "js-biorobots",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js",
+    "lint:fix": "eslint src --ext .js --fix",
+    "format": "prettier --write \"src/**/*.{js,scss,css}\" \"vite.config.js\"",
+    "check-format": "prettier --check \"src/**/*.{js,scss}\""
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "prettier": "3.5.3",
+    "sass": "^1.89.1",
+    "sass-loader": "^13.3.3",
+    "vite": "^6.3.5",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "vuetify": "^3.8.8"
+  }
+}

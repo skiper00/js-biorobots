@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <script type="module" src="./wallet.js"></script>
+</head>
+
+<body>
+    <main class="wallet">
+        <div class="wallet__content">
+            <h2 class="wallet__title">Кошелёк криптовалют</h2>
+            <div class="wallet__coins-progress-bar"></div>
+
+            <div class="wallet__count-wrapper">
+                <p class="wallet__count-coins"><strong class="wallet__strong">45</strong> biorobo монет</p>
+            </div>
+
+            <div class="wallet__coin-controls">
+                <button class="wallet__add-coins" onclick="handleAddCoins">
+                    <span>Нацыганить</span>
+                </button>
+                <label class="wallet__label-checkbox" for="check">
+                    <input id="check" type="checkbox" class="custom-checkbox hidden" />
+                    <div class="wallet__custom-checkbox">
+                        <span class="wallet__check-icon">
+                            <img src="/images/check-mark.png" alt="✓" />
+                        </span>
+                    </div>
+                    <span>Нацыганить по 5 монет</span>
+                </label>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="./styles/scss/main.scss">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      height: 100%;
+      overflow-x: hidden;
+      background-color: #222930;
+    }
+
+    #app {
+      background-color: #222930;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .container {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1016px;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1919px) {
+      .container {
+        padding: 0 134px 0 134px;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .container {
+        padding: 0 134px 0 134px;
+      }
+    }
+
+    @media (min-width: 320px) and (max-width: 767px) {
+      .container {
+        padding: 0 134px 0 134px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app"></div>
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>

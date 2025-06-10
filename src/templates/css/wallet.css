@@ -1,0 +1,128 @@
+.wallet p {
+  color: #a3b8cc;
+  font-weight: 500;
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.wallet__coin-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 27px;
+}
+.wallet__add-coins {
+  background-color: transparent;
+  border: none;
+}
+.wallet__add-coins span {
+  color: #ff7f22;
+  -webkit-text-decoration: underline solid #ff7f22;
+  text-decoration: underline solid #ff7f22;
+  text-underline-offset: 4px;
+  font-size: 16px;
+}
+.wallet__add-coins span:hover {
+  color: #ff5722;
+  -webkit-text-decoration: underline solid #ff5722;
+  text-decoration: underline solid #ff5722;
+}
+.wallet__add-coins span:active {
+  color: #ff7f22;
+  text-decoration: none;
+}
+.wallet__label-checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+.wallet__label-checkbox span {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.wallet__content h1 {
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 124px;
+  margin-bottom: 60px;
+}
+.wallet__coins-progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.wallet__count-coins strong {
+  color: #a3b8cc;
+}
+.wallet__coins-progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+.wallet__count-coins strong {
+  color: #a3b8cc;
+}
+.wallet__custom-checkbox {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #2a343a;
+  border: 2px solid #a3b8cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.wallet__check-icon {
+  width: 16px;
+  height: 16px;
+  background-image: url('/images/check-mark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s ease;
+  transition: opacity 0.1s ease;
+}
+.wallet__check-icon img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.custom-checkbox {
+  opacity: 0;
+  position: absolute;
+}
+.custom-checkbox:checked + .wallet__custom-checkbox .wallet__check-icon {
+  opacity: 1;
+}
+.custom-checkbox:focus + .wallet__custom-checkbox,
+.custom-checkbox:hover + .wallet__custom-checkbox {
+  border-color: #ff5722;
+  background-color: #3a4a50;
+}

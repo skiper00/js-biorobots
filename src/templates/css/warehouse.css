@@ -1,0 +1,71 @@
+.warehouse {
+  margin-top: 100px;
+}
+.warehouse__title {
+  color: white;
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+.warehouse__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 90px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.warehouse__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.warehouse__name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.warehouse__price {
+  color: #a3b8cc;
+  margin-top: 5px;
+}
+.warehouse__count {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.warehouse__button {
+  padding-left: 81.5px;
+  padding-right: 81.5px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 24px;
+  font-weight: 600;
+}
+.warehouse .button-gradient {
+  border: #22b3e3 2px solid;
+  color: #7cdaf9;
+  border-radius: 60px;
+  background-color: transparent;
+}
+.warehouse .button-gradient:hover {
+  background-color: #7cdaf9;
+  border-color: transparent;
+  color: #212529;
+  -webkit-box-shadow: 0 6px 15px 0 rgb(30, 84, 102);
+  box-shadow: 0 6px 15px 0 rgb(30, 84, 102);
+}
+.warehouse .button-gradient:active {
+  color: #22b3e3;
+  background-color: transparent;
+  border: #22b3e3 2px solid;
+}

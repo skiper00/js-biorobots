@@ -1,0 +1,36 @@
+.header {
+  padding: 48px 212px 0 212px;
+  display: flex;
+  margin-bottom: 94px;
+  align-items: center;
+  justify-content: space-between;
+
+  &__button {
+    background-color: transparent;
+    padding: 12px 18px 12px 18px;
+    border: 2px #ff7f22 solid;
+    border-radius: 60px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: #ff5722;
+      border-color: transparent;
+    }
+
+    &:active {
+      background-color: #ff7f22;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__logo {
+      display: none;
+    }
+
+    &__button {
+      margin: auto;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.header {
+  padding: 48px 212px 0 212px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 94px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.header__button {
+  background-color: transparent;
+  padding: 12px 18px 12px 18px;
+  border: 2px #ff7f22 solid;
+  border-radius: 60px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header__button:hover {
+  background-color: #ff5722;
+  border-color: transparent;
+}
+.header__button:active {
+  background-color: #ff7f22;
+}

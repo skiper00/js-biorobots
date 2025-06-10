@@ -1,0 +1,93 @@
+.warehouse {
+  margin-top: 100px;
+
+  &__title {
+    color: white;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 60px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 90px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  &__price {
+    color: #a3b8cc;
+    margin-top: 5px;
+  }
+
+  &__count {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+
+  &__button {
+    padding-left: 81.5px;
+    padding-right: 81.5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 24px;
+    font-weight: 600;
+  }
+
+  .button-gradient {
+    border: #22b3e3 2px solid;
+    color: #7cdaf9;
+    border-radius: 60px;
+    background-color: transparent;
+
+    &:hover {
+      background-color: #7cdaf9;
+      border-color: transparent;
+      color: #212529;
+      box-shadow: 0 6px 15px 0 rgba(30, 84, 102, 1);
+    }
+
+    &:active {
+      color: #22b3e3;
+      background-color: transparent;
+      border: #22b3e3 2px solid;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    &__list {
+      display: grid;
+      grid-auto-columns: repeat(2, 1fr);
+    }
+
+    .center-item {
+      grid-column: 1/3;
+      justify-self: center;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}

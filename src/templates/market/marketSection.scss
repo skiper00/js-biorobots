@@ -1,0 +1,104 @@
+.market {
+  margin-top: 104px;
+
+  &__title {
+    color: white;
+    font-weight: 600;
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon {}
+
+  &__name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 24px;
+  }
+
+  &__price {
+    color: #a3b8cc;
+    margin-top: 5px;
+  }
+
+  &__button {
+    color: white;
+    padding-left: 60px;
+    padding-right: 69px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 60px;
+    border: none;
+    margin-top: 24px;
+    font-weight: 600;
+    background: #ff7f22;
+    background: linear-gradient(180deg,
+        rgba(255, 127, 34, 1) 0%,
+        rgba(255, 87, 34, 1) 93%);
+
+    &:hover {
+      background: #ff5722;
+    }
+
+    &:active {
+      background: #ff7f22;
+    }
+  }
+
+  .sprite {
+    width: 281px;
+    height: 268px;
+    background-image: url('../../assets/images/css_sprites.png');
+    background-repeat: no-repeat;
+  }
+
+  .sprite-bio-arm {
+    background-position: -290px 30px;
+  }
+
+  .sprite-microchip {
+    background-position: -0 -261.5px;
+  }
+
+  .sprite-soul {
+    background-position: -0 25px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1919px) {
+    &__name {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    &__list {
+      display: grid;
+      grid-auto-columns: repeat(2, 1fr);
+    }
+
+    .center-item {
+      grid-column: 1/3;
+      justify-self: center;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    &__list {
+      flex-direction: column;
+    }
+
+    &__title {
+      text-align: center;
+    }
+  }
+}

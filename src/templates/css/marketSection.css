@@ -1,0 +1,81 @@
+.market {
+  margin-top: 104px;
+}
+.market__title {
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+}
+.market__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.market__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.market__name {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+.market__price {
+  color: #a3b8cc;
+  margin-top: 5px;
+}
+.market__button {
+  color: white;
+  padding-left: 60px;
+  padding-right: 69px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 60px;
+  border: none;
+  margin-top: 24px;
+  font-weight: 600;
+  background: #ff7f22;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgb(255, 127, 34)),
+    color-stop(93%, rgb(255, 87, 34))
+  );
+  background: linear-gradient(
+    180deg,
+    rgb(255, 127, 34) 0%,
+    rgb(255, 87, 34) 93%
+  );
+}
+.market__button:hover {
+  background: #ff5722;
+}
+.market__button:active {
+  background: #ff7f22;
+}
+.market .sprite {
+  width: 281px;
+  height: 268px;
+  background-image: url('../../assets/images/css_sprites.png');
+  background-repeat: no-repeat;
+}
+.market .sprite-bio-arm {
+  background-position: -290px 30px;
+}
+.market .sprite-microchip {
+  background-position: 0 -261.5px;
+}
+.market .sprite-soul {
+  background-position: 0 25px;
+}

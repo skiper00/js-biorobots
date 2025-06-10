@@ -1,0 +1,20 @@
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.hero__content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 24px;
+}
+.hero__content span {
+  color: #a3b8cc;
+  font-size: 24px;
+}

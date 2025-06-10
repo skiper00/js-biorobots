@@ -1,0 +1,208 @@
+.production {
+  &__heading {
+    font-weight: 500;
+    color: white;
+    font-size: 32px;
+    margin-top: 100px;
+
+  }
+
+  &__layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  &__settings {
+    align-items: end;
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  &__config {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__title {
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__options {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+
+  &__option {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  &__input {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__label {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    background-color: #2a343a;
+    border: 2px #a3b8cc solid;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  &__input:checked + &__label &__dot {
+    opacity: 1;
+  }
+
+  &__input:focus + &__label,
+  &__input:hover + &__label {
+    border-color: #ff5722;
+    background-color: #3a4a50;
+  }
+
+  &__dot {
+    width: 17.6px;
+    height: 18px;
+    background-color: #ff5722;
+    border-radius: 9999px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+  }
+
+  &__text {
+    color: white;
+    font-size: 12px;
+  }
+
+  &__parts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  &__part {
+    cursor: pointer;
+  }
+
+  &__sprite {
+    width: 48px;
+    height: 48px;
+    background-image: url('../../assets/images/css_sprites (6).png');
+    background-repeat: no-repeat;
+
+    &.bg-Group_18 {
+      background-position: -146px -10px;
+    }
+
+    &.bg-Subtract {
+      background-position: -146px -78px;
+    }
+
+    &.bg-Subtract_1 {
+      background-position: -10px -146px;
+    }
+
+    &.bg-Subtract_2 {
+      background-position: -10px -10px;
+    }
+
+    &.bg-Vector {
+      background-position: -10px -78px;
+    }
+
+    &.bg-Vector_1 {
+      background-position: -78px -78px;
+    }
+
+    &.bg-Vector_4 {
+      background-position: -146px -146px;
+    }
+  }
+
+  &__preview {
+    width: 236px;
+    height: 320px;
+    background-image: url('../../assets/images/css_sprites (8).png');
+    background-repeat: no-repeat;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-top: 58px;
+  }
+
+  &__button {
+    max-width: 236px;
+    padding: 12px 15.5px 12px 15.5px;
+    border: 2px#ff7f22 solid;
+    border-radius: 60px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &__note {
+    color: #a3b8cc;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 195px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    &__settings {
+      flex-direction: column;
+      align-items: normal;
+    }
+
+    &__parts {
+      margin-top: 40px;
+    }
+
+    &__actions {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__layout {
+      flex-direction: column-reverse;
+    }
+
+    &__actions {
+      flex-direction: column-reverse;
+    }
+
+    &__settings {
+      align-items: normal;
+      flex-direction: column;
+    }
+
+    .production {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
